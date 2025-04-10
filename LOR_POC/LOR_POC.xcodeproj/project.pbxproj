@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,18 +17,21 @@
 		4F13E947237DD72E005BCAE9 /* AccountsListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F13E946237DD72E005BCAE9 /* AccountsListModel.swift */; };
 		4FD6C47A1B754AF1002F9F90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD6C4791B754AF1002F9F90 /* AppDelegate.swift */; };
 		4FD6C4A01B755242002F9F90 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD6C49D1B755242002F9F90 /* InitialViewController.swift */; };
-		641F95F6F749DFDDBC57C1A6 /* Pods_LOR_POC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2C88388F0C372088D21BBAF /* Pods_LOR_POC.framework */; };
 		69B48C322AD4E7AD0026AEC6 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 69B48C312AD4E7AD0026AEC6 /* PrivacyInfo.xcprivacy */; };
-		B7168FBC1FACC6F900A48DB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7168FBB1FACC6F900A48DB5 /* LaunchScreen.storyboard */; };
+		7102BAB92DA841620064D997 /* MobileSync in Frameworks */ = {isa = PBXBuildFile; productRef = 7102BAB82DA841620064D997 /* MobileSync */; };
+		7102BABB2DA841620064D997 /* SalesforceAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 7102BABA2DA841620064D997 /* SalesforceAnalytics */; };
+		7102BABD2DA841620064D997 /* SalesforceSDKCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 7102BABC2DA841620064D997 /* SalesforceSDKCommon */; };
+		7102BABF2DA841620064D997 /* SalesforceSDKCore in Frameworks */ = {isa = PBXBuildFile; productRef = 7102BABE2DA841620064D997 /* SalesforceSDKCore */; };
+		7102BAC12DA841620064D997 /* SmartStore in Frameworks */ = {isa = PBXBuildFile; productRef = 7102BAC02DA841620064D997 /* SmartStore */; };
+		717F69362DA8431700DE32DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 717F69352DA8431700DE32DE /* LaunchScreen.storyboard */; };
+		717F69382DA8437500DE32DE /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 717F69372DA8437500DE32DE /* Image.xcassets */; };
 		B73B520D234FA65F001B069B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73B520C234FA65F001B069B /* SceneDelegate.swift */; };
 		B77BD8A321125B510036B284 /* bootconfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = B77BD8A221125B510036B284 /* bootconfig.plist */; };
-		CEA8CA041F071B2300448B51 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA8CA031F071B2300448B51 /* Images.xcassets */; };
 		D33B88412CA60F0E00892D80 /* LoginTypeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33B883F2CA60F0E00892D80 /* LoginTypeSelectionViewController.swift */; };
 		D33B88422CA60F0E00892D80 /* QrCodeScanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33B88402CA60F0E00892D80 /* QrCodeScanController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		040A9C5A7F6BB5034303B04F /* Pods-LOR_POC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOR_POC.debug.xcconfig"; path = "Target Support Files/Pods-LOR_POC/Pods-LOR_POC.debug.xcconfig"; sourceTree = "<group>"; };
 		4F13E936237DD5D9005BCAE9 /* ContactDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailsView.swift; sourceTree = "<group>"; };
 		4F13E937237DD5D9005BCAE9 /* ContactsForAccountModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsForAccountModel.swift; sourceTree = "<group>"; };
 		4F13E938237DD5D9005BCAE9 /* ContactsForAccountListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsForAccountListView.swift; sourceTree = "<group>"; };
@@ -43,12 +46,10 @@
 		4FD6C49D1B755242002F9F90 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		4FF12F8A1DCA91F5004D9EF9 /* LOR_POC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LOR_POC.entitlements; sourceTree = "<group>"; };
 		69B48C312AD4E7AD0026AEC6 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		B4178B3C3CF6B985C39D9916 /* Pods-LOR_POC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOR_POC.release.xcconfig"; path = "Target Support Files/Pods-LOR_POC/Pods-LOR_POC.release.xcconfig"; sourceTree = "<group>"; };
-		B7168FBB1FACC6F900A48DB5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "../mobile_sdk/SalesforceMobileSDK-iOS/shared/resources/LaunchScreen.storyboard"; sourceTree = "<group>"; };
+		717F69352DA8431700DE32DE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		717F69372DA8437500DE32DE /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 		B73B520C234FA65F001B069B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B77BD8A221125B510036B284 /* bootconfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = bootconfig.plist; sourceTree = "<group>"; };
-		C2C88388F0C372088D21BBAF /* Pods_LOR_POC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LOR_POC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEA8CA031F071B2300448B51 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "mobile_sdk/SalesforceMobileSDK-iOS/shared/resources/Images.xcassets"; sourceTree = SOURCE_ROOT; };
 		D33B883F2CA60F0E00892D80 /* LoginTypeSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTypeSelectionViewController.swift; sourceTree = "<group>"; };
 		D33B88402CA60F0E00892D80 /* QrCodeScanController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QrCodeScanController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,23 +59,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				641F95F6F749DFDDBC57C1A6 /* Pods_LOR_POC.framework in Frameworks */,
+				7102BABB2DA841620064D997 /* SalesforceAnalytics in Frameworks */,
+				7102BAB92DA841620064D997 /* MobileSync in Frameworks */,
+				7102BAC12DA841620064D997 /* SmartStore in Frameworks */,
+				7102BABD2DA841620064D997 /* SalesforceSDKCommon in Frameworks */,
+				7102BABF2DA841620064D997 /* SalesforceSDKCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2655FDD5AF14502B4A02B991 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				040A9C5A7F6BB5034303B04F /* Pods-LOR_POC.debug.xcconfig */,
-				B4178B3C3CF6B985C39D9916 /* Pods-LOR_POC.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		4F13E944237DD626005BCAE9 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,8 +96,6 @@
 			children = (
 				4FD6C4761B754AF1002F9F90 /* LOR_POC */,
 				4FD6C4751B754AF1002F9F90 /* Products */,
-				2655FDD5AF14502B4A02B991 /* Pods */,
-				6DEBCC8A44D53DFA838C79AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,9 +124,9 @@
 				4F13E941237DD5EE005BCAE9 /* userstore.json */,
 				4F13E940237DD5EE005BCAE9 /* usersyncs.json */,
 				B77BD8A221125B510036B284 /* bootconfig.plist */,
-				B7168FBB1FACC6F900A48DB5 /* LaunchScreen.storyboard */,
-				CEA8CA031F071B2300448B51 /* Images.xcassets */,
+				717F69352DA8431700DE32DE /* LaunchScreen.storyboard */,
 				4FD6C4781B754AF1002F9F90 /* Info.plist */,
+				717F69372DA8437500DE32DE /* Image.xcassets */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -151,14 +144,6 @@
 			name = Classes;
 			sourceTree = "<group>";
 		};
-		6DEBCC8A44D53DFA838C79AD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C2C88388F0C372088D21BBAF /* Pods_LOR_POC.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -166,11 +151,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4FD6C4931B754AF1002F9F90 /* Build configuration list for PBXNativeTarget "LOR_POC" */;
 			buildPhases = (
-				7C068D26C9BC733571B45A27 /* [CP] Check Pods Manifest.lock */,
 				4FD6C4701B754AF1002F9F90 /* Sources */,
 				4FD6C4711B754AF1002F9F90 /* Frameworks */,
 				4FD6C4721B754AF1002F9F90 /* Resources */,
-				0A35545074D4D694EC0E42BD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -187,8 +170,9 @@
 		4FD6C46C1B754AF1002F9F90 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1630;
 				ORGANIZATIONNAME = LOR_POCOrganizationName;
 				TargetAttributes = {
 					4FD6C4731B754AF1002F9F90 = {
@@ -211,6 +195,9 @@
 				Base,
 			);
 			mainGroup = 4FD6C46B1B754AF1002F9F90;
+			packageReferences = (
+				7102BAB72DA841620064D997 /* XCRemoteSwiftPackageReference "SalesforceMobileSDK-iOS-SPM" */,
+			);
 			productRefGroup = 4FD6C4751B754AF1002F9F90 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -226,57 +213,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				69B48C322AD4E7AD0026AEC6 /* PrivacyInfo.xcprivacy in Resources */,
+				717F69382DA8437500DE32DE /* Image.xcassets in Resources */,
 				4F13E943237DD5EE005BCAE9 /* userstore.json in Resources */,
 				B77BD8A321125B510036B284 /* bootconfig.plist in Resources */,
 				4F13E942237DD5EE005BCAE9 /* usersyncs.json in Resources */,
-				CEA8CA041F071B2300448B51 /* Images.xcassets in Resources */,
-				B7168FBC1FACC6F900A48DB5 /* LaunchScreen.storyboard in Resources */,
+				717F69362DA8431700DE32DE /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		0A35545074D4D694EC0E42BD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LOR_POC/Pods-LOR_POC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LOR_POC/Pods-LOR_POC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LOR_POC/Pods-LOR_POC-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7C068D26C9BC733571B45A27 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LOR_POC-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4FD6C4701B754AF1002F9F90 /* Sources */ = {
@@ -322,6 +267,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -330,8 +276,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 98CWPF5748;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -379,6 +327,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -387,8 +336,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 98CWPF5748;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -410,11 +361,11 @@
 		};
 		4FD6C4941B754AF1002F9F90 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 040A9C5A7F6BB5034303B04F /* Pods-LOR_POC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = LOR_POC/LOR_POC.entitlements;
 				INFOPLIST_FILE = LOR_POC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -422,26 +373,36 @@
 				OTHER_SWIFT_FLAGS = "-DSIGNPOST_ENABLED";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.salesforce.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "LOR_POC/Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		4FD6C4951B754AF1002F9F90 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B4178B3C3CF6B985C39D9916 /* Pods-LOR_POC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = LOR_POC/LOR_POC.entitlements;
 				INFOPLIST_FILE = LOR_POC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.salesforce.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "LOR_POC/Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -467,6 +428,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7102BAB72DA841620064D997 /* XCRemoteSwiftPackageReference "SalesforceMobileSDK-iOS-SPM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/forcedotcom/SalesforceMobileSDK-iOS-SPM";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 13.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7102BAB82DA841620064D997 /* MobileSync */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7102BAB72DA841620064D997 /* XCRemoteSwiftPackageReference "SalesforceMobileSDK-iOS-SPM" */;
+			productName = MobileSync;
+		};
+		7102BABA2DA841620064D997 /* SalesforceAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7102BAB72DA841620064D997 /* XCRemoteSwiftPackageReference "SalesforceMobileSDK-iOS-SPM" */;
+			productName = SalesforceAnalytics;
+		};
+		7102BABC2DA841620064D997 /* SalesforceSDKCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7102BAB72DA841620064D997 /* XCRemoteSwiftPackageReference "SalesforceMobileSDK-iOS-SPM" */;
+			productName = SalesforceSDKCommon;
+		};
+		7102BABE2DA841620064D997 /* SalesforceSDKCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7102BAB72DA841620064D997 /* XCRemoteSwiftPackageReference "SalesforceMobileSDK-iOS-SPM" */;
+			productName = SalesforceSDKCore;
+		};
+		7102BAC02DA841620064D997 /* SmartStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7102BAB72DA841620064D997 /* XCRemoteSwiftPackageReference "SalesforceMobileSDK-iOS-SPM" */;
+			productName = SmartStore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4FD6C46C1B754AF1002F9F90 /* Project object */;
 }
