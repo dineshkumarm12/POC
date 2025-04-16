@@ -134,8 +134,18 @@ class UserDetailsModel: ObservableObject {
         }
     }*/
     
+    
     @MainActor
     func fetchLoggedInUserInfo() {
+        if let credentials = UserAccountManager.shared.currentUserAccount?.credentials {
+            print("Access Token: \(credentials.accessToken ?? "N/A")")
+            print("Instance URL: \(credentials.instanceUrl?.absoluteString ?? "N/A")")
+            print("Identity URL: \(credentials.identityUrl?.absoluteString ?? "N/A")")
+            print("Refresh Token: \(credentials.refreshToken ?? "N/A")")
+            //print("User ID: \(credentials.userId ?? "N/A")")
+            print("Organization ID: \(credentials.organizationId ?? "N/A")")
+        }
+        
         Task {
             guard let user = UserAccountManager.shared.currentUserAccount,
                   let identityURL = user.credentials.identityUrl,
@@ -143,33 +153,39 @@ class UserDetailsModel: ObservableObject {
                 print("Missing credentials")
                 return
             }
-
-            print("🔗 Using identity URL: \(identityURL)")
-            print("🔗 Calling identity URL: \(identityURL)")
-            print("🔗 identity URL: \(identityURL)")
-            print("🔐 access token: \(accessToken)")
-            print("🔐 access token: \(accessToken.prefix(20))...")
+            
             print("✅ Instance URL: \(user.credentials.instanceUrl)")
-
+            print("🔗 Using identity URL: \(identityURL)")
+            print("🔐 access token: \(accessToken)")
+            
             var request = URLRequest(url: identityURL)
             request.httpMethod = "GET"
             request.setValue("Bearer \(accessToken)", forHTTPHeaderField: "Authorization")
-
+            
             do {
                 let (data, response) = try await URLSession.shared.data(for: request)
-
+                
                 guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
                     let errorBody = String(data: data, encoding: .utf8) ?? "No error body"
                     print("❌ Invalid response. Status: \((response as? HTTPURLResponse)?.statusCode ?? -1)")
                     print("❌ Response body: \(errorBody)")
                     return
                 }
-
+                
+                print("Data: \(String(data: data, encoding: .utf8) ?? "No data")")
+                print("Response: \(response)")
+                
                 let decodedUser = try JSONDecoder().decode(SalesforceUser.self, from: data)
                 self.userInfo = decodedUser
             } catch {
                 print("Failed to fetch user info: \(error)")
             }
         }
+        
     }
 }
+
+
+
+
+

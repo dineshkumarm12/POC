@@ -18,9 +18,14 @@ struct UserView: View {
     var body: some View {
         VStack(spacing: 10) {
             if let user = viewModel.userInfo {
-                Text("👤 \(user.name)")
+                Text("👤 \(user.display_name)")
                 Text("📧 \(user.email)")
                 Text("🆔 ID: \(user.id)")
+                Text("Nick Name: \(user.nick_name)")
+                Text("Country: \(user.addrCountry)")
+                Text("Status: \(user.status)")
+                Text("Mobile Phone: \(user.mobilePhone)")
+                Text("Active: \(user.active)")
             } else {
                 ProgressView("Loading user...")
                     .onAppear {
