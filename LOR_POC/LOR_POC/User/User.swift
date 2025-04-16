@@ -11,8 +11,11 @@
 
 import Foundation
 
+import Foundation
+
 struct SalesforceUser: Codable {
     let id: String
+    let assertedUser: Bool
     let userId: String
     let organizationId: String
     let username: String
@@ -23,7 +26,8 @@ struct SalesforceUser: Codable {
     let firstName: String
     let lastName: String
     let timezone: String
-    let photos: Photos
+    let photos: UserPhotos
+    let addrStreet: String?
     let addrCity: String?
     let addrState: String?
     let addrCountry: String?
@@ -31,8 +35,8 @@ struct SalesforceUser: Codable {
     let mobilePhone: String?
     let mobilePhoneVerified: Bool
     let isLightningLoginUser: Bool
-    let status: Status?
-    let urls: Urls
+    let status: Status
+    let urls: SalesforceURLs
     let active: Bool
     let userType: String
     let language: String
@@ -40,59 +44,57 @@ struct SalesforceUser: Codable {
     let utcOffset: Int
     let lastModifiedDate: String
     let isAppInstalled: Bool
-    
-    
+
     enum CodingKeys: String, CodingKey {
         case id
-        case user_id
-        case organization_id
+        case assertedUser = "asserted_user"
+        case userId = "user_id"
+        case organizationId = "organization_id"
         case username
-        case nick_name
-        case display_name
+        case nickName = "nick_name"
+        case displayName = "display_name"
         case email
-        case email_verified
-        case first_name
-        case last_name
+        case emailVerified = "email_verified"
+        case firstName = "first_name"
+        case lastName = "last_name"
         case timezone
         case photos
-        case addr_city
-        case addr_state
-        case addr_country
-        case addr_zip
-        case mobile_phone
-        case mobile_phone_verified
-        case is_lightning_login_user
+        case addrStreet = "addr_street"
+        case addrCity = "addr_city"
+        case addrState = "addr_state"
+        case addrCountry = "addr_country"
+        case addrZip = "addr_zip"
+        case mobilePhone = "mobile_phone"
+        case mobilePhoneVerified = "mobile_phone_verified"
+        case isLightningLoginUser = "is_lightning_login_user"
         case status
         case urls
         case active
-        case user_type
+        case userType = "user_type"
         case language
         case locale
-        case utc_offset
-        case last_modified_date
-        case is_app_installed
+        case utcOffset
+        case lastModifiedDate = "last_modified_date"
+        case isAppInstalled = "is_app_installed"
     }
-
 }
 
-struct Photos: Codable {
+struct UserPhotos: Codable {
     let picture: String
     let thumbnail: String
-    
-    
-    enum CodingKeys: String, CodingKey {
-        case picture
-        case thumbnail
-    }
-
 }
 
 struct Status: Codable {
     let createdDate: String?
     let body: String?
+
+    enum CodingKeys: String, CodingKey {
+        case createdDate = "created_date"
+        case body
+    }
 }
 
-struct Urls: Codable {
+struct SalesforceURLs: Codable {
     let enterprise: String
     let metadata: String
     let partner: String
@@ -101,13 +103,33 @@ struct Urls: Codable {
     let search: String
     let query: String
     let recent: String
-    let toolingSoap: String
-    let toolingRest: String
+    let toolingSoap: String?
+    let toolingRest: String?
     let profile: String
     let feeds: String
     let groups: String
     let users: String
-    let feedItems: String
-    let feedElements: String
-    let customDomain: String
+    let feedItems: String?
+    let feedElements: String?
+    let customDomain: String?
+
+    enum CodingKeys: String, CodingKey {
+        case enterprise
+        case metadata
+        case partner
+        case rest
+        case sobjects
+        case search
+        case query
+        case recent
+        case toolingSoap = "tooling_soap"
+        case toolingRest = "tooling_rest"
+        case profile
+        case feeds
+        case groups
+        case users
+        case feedItems = "feed_items"
+        case feedElements = "feed_elements"
+        case customDomain = "custom_domain"
+    }
 }
