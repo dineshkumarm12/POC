@@ -46,7 +46,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
          * parameters are obtained and passed to
          * LoginTypeSelectionViewController.loginWithFrontdoorBridgeUrl
          */
-//        // When the app process was running and receives a custom URL scheme deep link, use login QR code if applicable.
+//         When the app process was running and receives a custom URL scheme deep link, use login QR code if applicable.
 //        if let urlContext = urlContexts.first {
 //            useQrCodeLogInUrl(urlContext.url)
 //        }
@@ -126,7 +126,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
        MobileSyncSDKManager.shared.setupUserSyncsFromDefaultConfig()
     
        self.window?.rootViewController = UIHostingController(
-           rootView: AccountsListView()
+           rootView: UserView() //AccountsListView()
        )
    }
    

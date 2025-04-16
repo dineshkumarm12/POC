@@ -31,7 +31,7 @@
 	<key>NSCameraUsageDescription</key>
 	<string>This app requires camera usage permissions to capture QR codes for log in.</string>
 	<key>SFDCOAuthLoginHost</key>
-	<string>login.salesforce.com</string>
+	<string>laingorourke--loreustage.sandbox.my.salesforce.com</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -64,5 +64,14 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>testsfdc</string>
+            </array>
+        </dict>
+    </array>
 </dict>
 </plist>

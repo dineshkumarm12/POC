@@ -5,13 +5,16 @@
 	<key>remoteAccessConsumerKey</key>
 	<string>3MVG9tklOJf0sawVfbyTtOvXDftibC.E0fI3D6vKZIFtXuY_f16PwmWNQSEtZPY74_pt9p6yPwrWysTEHglHP</string>
 	<key>oauthRedirectURI</key>
-	<string>sdfc:///mobilesdk/detect/oauth/done</string>
+	<string>testsfdc:///mobilesdk/detect/oauth/done</string>
 	<key>oauthScopes</key>
 	<array>
 		<string>web</string>
 		<string>api</string>
+        <string>refresh_token</string>
 	</array>
-	<key>shouldAuthenticate</key>
-	<true/>
+    <key>loginHost</key>
+    <string>test.salesforce.com</string>
+    <key>logLevel</key>
+    <string>DEBUG</string>
 </dict>
 </plist>

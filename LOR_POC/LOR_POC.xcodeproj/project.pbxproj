@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -54,6 +54,10 @@
 		D33B88402CA60F0E00892D80 /* QrCodeScanController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QrCodeScanController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3ECAB2A82DAF5900002551AF /* User */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = User; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
 		4FD6C4711B754AF1002F9F90 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
@@ -70,10 +74,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3ECAB2A72DAF58E2002551AF /* POC */ = {
+			isa = PBXGroup;
+			children = (
+				D33B88402CA60F0E00892D80 /* QrCodeScanController.swift */,
+				D33B883F2CA60F0E00892D80 /* LoginTypeSelectionViewController.swift */,
+			);
+			path = POC;
+			sourceTree = "<group>";
+		};
+		3ECAB2A92DAF591C002551AF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4FD6C49D1B755242002F9F90 /* InitialViewController.swift */,
+				4FD6C4791B754AF1002F9F90 /* AppDelegate.swift */,
+				B73B520C234FA65F001B069B /* SceneDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		4F13E944237DD626005BCAE9 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				B73B520C234FA65F001B069B /* SceneDelegate.swift */,
 				4F13E939237DD5D9005BCAE9 /* AccountsListView.swift */,
 				4F13E938237DD5D9005BCAE9 /* ContactsForAccountListView.swift */,
 				4F13E936237DD5D9005BCAE9 /* ContactDetailsView.swift */,
@@ -134,12 +156,11 @@
 		4FD6C4A11B755265002F9F90 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				D33B883F2CA60F0E00892D80 /* LoginTypeSelectionViewController.swift */,
-				D33B88402CA60F0E00892D80 /* QrCodeScanController.swift */,
+				3ECAB2A92DAF591C002551AF /* Core */,
+				3ECAB2A82DAF5900002551AF /* User */,
+				3ECAB2A72DAF58E2002551AF /* POC */,
 				4F13E944237DD626005BCAE9 /* SwiftUI */,
 				4F13E945237DD62D005BCAE9 /* Models */,
-				4FD6C49D1B755242002F9F90 /* InitialViewController.swift */,
-				4FD6C4791B754AF1002F9F90 /* AppDelegate.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -158,6 +179,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3ECAB2A82DAF5900002551AF /* User */,
 			);
 			name = LOR_POC;
 			productName = LOR_POC;
