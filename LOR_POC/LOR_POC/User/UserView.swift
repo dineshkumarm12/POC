@@ -17,15 +17,15 @@ struct UserView: View {
 
     var body: some View {
         NavigationView {
-            VStack(alignment: .leading, spacing: 10) {
+            VStack(alignment: .leading, spacing: 0) {
                 if let user = viewModel.userInfo {
                     Text("Name: \(user.displayName)")
                     Text("User Name: \(user.username)")
-                    Text("Nick Name: \(user.nickName)")
-                    Text("Email: \(user.email)")
-                    Text("Mobile Phone: \(user.mobilePhone ?? "")")
+                    //Text("Nick Name: \(user.nickName)")
+                    //Text("Email: \(user.email)")
+                    //Text("Mobile Phone: \(user.mobilePhone ?? "")")
                     Text("Country: \(user.addrCountry ?? "")")
-                    Text("User is Active : \(user.active)")
+                    //Text("User is Active : \(user.active)")
                 } else {
                     ProgressView("Loading user...")
                         .onAppear {
@@ -33,9 +33,12 @@ struct UserView: View {
                         }
                 }
             }
+            .padding(.leading,0)
+            
         }
         .padding()
         .navigationTitle("LOR")
+        .background(Color.gray.opacity(0.1))
     }
 }
 

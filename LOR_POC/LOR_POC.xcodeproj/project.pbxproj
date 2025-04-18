@@ -55,6 +55,8 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		3E3AC93E2DB21005003FFD32 /* Mobile Permissions */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Mobile Permissions"; sourceTree = "<group>"; };
+		3E3AC9492DB22A55003FFD32 /* Landing Screen */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Landing Screen"; sourceTree = "<group>"; };
 		3ECAB2A82DAF5900002551AF /* User */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = User; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
@@ -156,6 +158,8 @@
 		4FD6C4A11B755265002F9F90 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				3E3AC9492DB22A55003FFD32 /* Landing Screen */,
+				3E3AC93E2DB21005003FFD32 /* Mobile Permissions */,
 				3ECAB2A92DAF591C002551AF /* Core */,
 				3ECAB2A82DAF5900002551AF /* User */,
 				3ECAB2A72DAF58E2002551AF /* POC */,
@@ -181,6 +185,8 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				3E3AC93E2DB21005003FFD32 /* Mobile Permissions */,
+				3E3AC9492DB22A55003FFD32 /* Landing Screen */,
 				3ECAB2A82DAF5900002551AF /* User */,
 			);
 			name = LOR_POC;

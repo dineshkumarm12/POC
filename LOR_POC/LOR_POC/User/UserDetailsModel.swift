@@ -183,6 +183,7 @@ class UserDetailsModel: ObservableObject {
         }
         
     }
+    
 }
 
 

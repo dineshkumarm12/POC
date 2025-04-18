@@ -126,7 +126,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
        MobileSyncSDKManager.shared.setupUserSyncsFromDefaultConfig()
     
        self.window?.rootViewController = UIHostingController(
-           rootView: UserView() //AccountsListView()
+           rootView: LandingView() //PermissionListView() //UserView() //AccountsListView()
        )
    }
    
