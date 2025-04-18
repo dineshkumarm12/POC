@@ -16,24 +16,26 @@ struct UserView: View {
     @StateObject var viewModel = UserDetailsModel()
 
     var body: some View {
-        VStack(spacing: 10) {
-            if let user = viewModel.userInfo {
-                Text("👤 \(user.displayName)")
-                Text("📧 \(user.email)")
-                Text("🆔 ID: \(user.id)")
-                Text("Nick Name: \(user.nickName)")
-                Text("Country: \(user.addrCountry)")
-                Text("Status: \(user.status)")
-                Text("Mobile Phone: \(user.mobilePhone)")
-                Text("Active: \(user.active)")
-            } else {
-                ProgressView("Loading user...")
-                    .onAppear {
-                        viewModel.fetchLoggedInUserInfo()
-                    }
+        NavigationView {
+            VStack(alignment: .leading, spacing: 10) {
+                if let user = viewModel.userInfo {
+                    Text("Name: \(user.displayName)")
+                    Text("User Name: \(user.username)")
+                    Text("Nick Name: \(user.nickName)")
+                    Text("Email: \(user.email)")
+                    Text("Mobile Phone: \(user.mobilePhone ?? "")")
+                    Text("Country: \(user.addrCountry ?? "")")
+                    Text("User is Active : \(user.active)")
+                } else {
+                    ProgressView("Loading user...")
+                        .onAppear {
+                            viewModel.fetchLoggedInUserInfo()
+                        }
+                }
             }
         }
         .padding()
+        .navigationTitle("LOR")
     }
 }
 
