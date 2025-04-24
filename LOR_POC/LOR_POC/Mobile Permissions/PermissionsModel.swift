@@ -39,10 +39,15 @@ final class PermissionsModel: ObservableObject {
     private var permissionCancellable: AnyCancellable?
 
     func fetchPermissions(forEmail email: String) {
-        let soql = """
+        let soql =
+        /*"""
         SELECT Id, Name, User__r.Email \
         FROM Mobile_Permission_Assignment__c \
         WHERE User__r.Email = '\(email)' AND IsActive__c = true
+        """*/
+        
+        """
+        SELECT Id, name, User__r.email, Permission_Code__c, Sort_Order__c from Mobile_Permission_Assignment__c where User__r.email = '\(email)' and IsActive__c = true Order by Sort_Order__c
         """
 
         let request = RestClient.shared.request(forQuery: soql, apiVersion: nil)

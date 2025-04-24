@@ -10,16 +10,17 @@ import SwiftUI
 
 struct PermissionListView: View {
     @StateObject private var viewModel = PermissionsModel()
-
+    
     var body: some View {
         NavigationView {
             List(viewModel.permissionAssignments) { item in
-                VStack(alignment: .leading) {
-                    Text(item.name)
-                        .font(.headline)
-                    Text(item.user.email)
-                        .font(.subheadline)
-                        .foregroundColor(.gray)
+                NavigationLink(destination: DetailView(title: item.name)) {
+                    VStack(alignment: .leading) {
+                        Text(item.name)
+                            .font(.headline)
+                            .frame(height: 50)
+
+                    }
                 }
             }
             .onAppear {
@@ -28,6 +29,10 @@ struct PermissionListView: View {
         }
     }
 }
+
+
 #Preview {
     PermissionListView()
 }
+
+
