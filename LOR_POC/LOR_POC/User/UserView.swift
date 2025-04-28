@@ -19,13 +19,19 @@ struct UserView: View {
         NavigationView {
             VStack(alignment: .leading, spacing: 0) {
                 if let user = viewModel.userInfo {
-                    Text("Name: \(user.displayName)")
-                    Text("User Name: \(user.username)")
-                    //Text("Nick Name: \(user.nickName)")
-                    //Text("Email: \(user.email)")
-                    //Text("Mobile Phone: \(user.mobilePhone ?? "")")
-                    Text("Country: \(user.addrCountry ?? "")")
-                    //Text("User is Active : \(user.active)")
+                    HStack {
+                        Image(systemName: "person.circle")
+                            .resizable()
+                            .frame(width: 50, height: 50)
+                            .clipShape(Circle())
+                        VStack(alignment: .leading){
+                            Text("\(user.displayName)").font(.headline)
+                            Text("\(user.username)")
+                                .font(.subheadline)
+                        }
+                    }
+                    .background(Color.clear)
+
                 } else {
                     ProgressView("Loading user...")
                         .onAppear {
@@ -34,11 +40,13 @@ struct UserView: View {
                 }
             }
             .padding(.leading,0)
+            .background(Color.clear)
             
         }
         .padding()
         .navigationTitle("LOR")
-        .background(Color.gray.opacity(0.1))
+        .background(Color.clear)
+        .frame(height: 120)
     }
 }
 

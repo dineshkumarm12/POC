@@ -13,8 +13,6 @@ struct LandingView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 0) {
                     UserView()
-                        .frame(height: 180
-                )
                     PermissionListView()
                 }
                 .padding()
