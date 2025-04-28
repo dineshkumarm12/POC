@@ -10,7 +10,7 @@ import SwiftUI
 
 struct PermissionListView: View {
     @StateObject private var viewModel = PermissionsModel()
-    
+    @Binding var refreshTrigger: Bool
     var body: some View {
         NavigationView {
             List(viewModel.permissionAssignments) { item in
@@ -26,13 +26,14 @@ struct PermissionListView: View {
             .onAppear {
                 viewModel.fetchPermissions(forEmail: "dineshkumar.mylsami@wipro.com")
             }
+            .onChange(of: refreshTrigger) { _ in
+                    viewModel.fetchPermissions(forEmail: "dineshkumar.mylsami@wipro.com")
+                }
         }
     }
 }
 
 
-#Preview {
-    PermissionListView()
-}
+
 
 

@@ -14,7 +14,7 @@ import SalesforceSDKCore
 
 struct UserView: View {
     @StateObject var viewModel = UserDetailsModel()
-
+    @Binding var refreshTrigger: Bool
     var body: some View {
         NavigationView {
             VStack(alignment: .leading, spacing: 0) {
@@ -34,13 +34,16 @@ struct UserView: View {
 
                 } else {
                     ProgressView("Loading user...")
-                        .onAppear {
-                            viewModel.fetchLoggedInUserInfo()
-                        }
                 }
             }
             .padding(.leading,0)
             .background(Color.clear)
+            .onAppear {
+                viewModel.fetchLoggedInUserInfo()
+            }
+            .onChange(of: refreshTrigger) { _ in
+                    viewModel.fetchLoggedInUserInfo()
+                }
             
         }
         .padding()
@@ -50,8 +53,3 @@ struct UserView: View {
     }
 }
 
-struct UserView_Previews: PreviewProvider {
-  static var previews: some View {
-      UserView()
-  }
-}
